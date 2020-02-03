@@ -5,6 +5,7 @@ import Posts from './posts';
 import Contact from './contact';
 import GlobalStyle from '../styles/Global';
 import '../styles/styles.scss'
+import '../styles/k-grid.css'
 
 
 function Content() {
@@ -15,23 +16,34 @@ function Content() {
     }
 
     return (
-        <div class="main-wrapper">
-            <div class="header">
-                <Navbar
-                    navbarState={navbarOpen}
-                    handleNavbar={handleNavbar}
-                />
+        <div class="">
+            <div class="row">
+                <div class="col-12">
+                    <Navbar
+                        navbarState={navbarOpen}
+                        handleNavbar={handleNavbar}
+                    />
+                </div>
             </div>
-            <div class="slider">
-                <SlideShow />
+            
+            <div class="row">
+                <div class="col-12">
+                    <SlideShow />
+                </div>
             </div>
-            <div class="posts">
-                <Posts/>
+
+            <div class="row">
+                <div class="col-12">
+                    <Posts/>
+                </div>
             </div>
-            <div class="contact">
-                <Contact/>
+
+            <div class="row">
+                <div class="col-12">
+                    <Contact/>
+                </div>
             </div>
-            <GlobalStyle />
+
         </div>
     );
 }

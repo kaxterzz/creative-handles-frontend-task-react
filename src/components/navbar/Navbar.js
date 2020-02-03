@@ -68,7 +68,7 @@ const FlexContainer = styled.div`
   margin: auto;
   padding: 0 2rem;;
   justify-content: space-between;
-  height: 5rem;
+  height: 4rem;
 `;
 
 const NavLinks = styled(animated.ul)`
@@ -85,6 +85,7 @@ const NavLinks = styled(animated.ul)`
     transition: all 300ms linear 0s;
     text-decoration: none;
     cursor: pointer;
+    font-size:12px;
     
 
     &:hover {

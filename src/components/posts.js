@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from './card'
+import Card from './card';
+import '../styles/k-grid.css';
 
 function Posts() {
     const posts = [
@@ -25,10 +26,14 @@ function Posts() {
 
     return (
         <div>
-            <div class="posts-container">
-                {posts.map(post => (
-                    <Card key={post.id} title={post.title} img={post.img} text={post.text} />
-                ))}
+            <div class="">
+                <div class="row">
+                    {posts.map(post => (
+                        <div class="col-4">
+                            <Card key={post.id} title={post.title} img={post.img} text={post.text} />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );

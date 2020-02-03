@@ -10,10 +10,6 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: inherit;
   }
 
-  html {
-    font-size: 62.5%;
-  }
-
   .main-wrapper {
     display: grid;
     grid-gap: 5px;
@@ -41,14 +37,6 @@ const GlobalStyles = createGlobalStyle`
   .contact {
     grid-area: contact;
   }
-  
-  .sliderStyles {
-    --organic-arrow-thickness: 6px;
-    --organic-arrow-color: white;
-    --control-bullet-color: #B421FC;
-    --loader-bar-color: #B421FC;
-    height:500px;
-  }
 
   .posts-container{
     display: flex;
@@ -65,8 +53,27 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .contact-card {
-    --card-width:40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap; nowrap;
+    justify-content: space-evenly;
+    width: 46% !important;
   }
+
+  .contact-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap; wrap;
+    justify-content: space-evenly;
+  }
+
+  .text-field {
+    width: 350;
+  }
+  .contact-form div{
+    margin:2px;
+  }
+
 `;
 
 export default GlobalStyles;
