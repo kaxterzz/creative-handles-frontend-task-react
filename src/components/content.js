@@ -3,9 +3,6 @@ import Navbar from './navbar/Navbar';
 import SlideShow from './slideshow';
 import Posts from './posts';
 import Contact from './contact';
-import GlobalStyle from '../styles/Global';
-import '../styles/styles.scss'
-import '../styles/k-grid.css'
 
 
 function Content() {
@@ -17,8 +14,8 @@ function Content() {
 
     return (
         <div class="">
-            <div class="row">
-                <div class="col-12">
+            <div className="row">
+                <div className="col-12">
                     <Navbar
                         navbarState={navbarOpen}
                         handleNavbar={handleNavbar}
@@ -26,20 +23,20 @@ function Content() {
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-12">
+            <div className="row">
+                <div className="col-12" style={{padding:0}}>
                     <SlideShow />
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
+            <div className="row">
+                <div className="col-12">
                     <Posts/>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
+            <div className="row">
+                <div className="col-12">
                     <Contact/>
                 </div>
             </div>

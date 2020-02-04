@@ -64,3 +64,11 @@
     clear: both;
     display: table;
 }
+
+.sliderStyles {
+    --organic-arrow-thickness: 6px;
+    --organic-arrow-color: white;
+    --control-bullet-color: #b421fc;
+    --loader-bar-color: #b421fc;
+    height: 500px;
+  }

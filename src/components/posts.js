@@ -1,13 +1,12 @@
 import React from 'react';
 import Card from './card';
-import '../styles/k-grid.css';
 
 function Posts() {
     const posts = [
         {
             id: 1,
             title: 'Title 1',
-            img: 'https://picsum.photos/id/1022/400/300',
+            img: 'https://picsum.photos/id/1028/400/300',
             text: 'A sample post'
         },
         {
@@ -21,6 +20,12 @@ function Posts() {
             title: 'Title 3',
             img: 'https://picsum.photos/id/1026/400/300',
             text: 'Whoa.. who built this'
+        },
+        {
+            id: 4,
+            title: 'Title 4',
+            img: 'https://picsum.photos/id/1027/400/300',
+            text: 'This is random'
         }
     ]
 
@@ -29,7 +34,7 @@ function Posts() {
             <div class="">
                 <div class="row">
                     {posts.map(post => (
-                        <div class="col-4">
+                        <div class="col-3">
                             <Card key={post.id} title={post.title} img={post.img} text={post.text} />
                         </div>
                     ))}

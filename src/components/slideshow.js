@@ -7,7 +7,7 @@ import img2 from '../assets/slider-2.jpg'
 function SlideShow() {
 
     return (
-        <div class="">
+        <div>
             <AwesomeSlider className="sliderStyles" animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
                 <div data-src={img1} />
                 <div data-src={img2} />
