@@ -86,6 +86,7 @@ const NavLinks = styled(animated.ul)`
     text-decoration: none;
     cursor: pointer;
     font-size:12px;
+    letter-spacing:2px;
     
 
     &:hover {

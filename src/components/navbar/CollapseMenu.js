@@ -19,7 +19,7 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
           <li><a href="#" onClick={props.handleNavbar}><span><FontAwesomeIcon icon={faHome} />&nbsp;</span>Home</a></li>
-          <li><a href="#" onClick={props.handleNavbar}><span><FontAwesomeIcon icon={faInfo} />&nbsp;</span>About</a></li>
+          <li><a href="#" onClick={props.handleNavbar}><span><FontAwesomeIcon icon={faInfo} />&nbsp;&nbsp;&nbsp;&nbsp;</span>About</a></li>
           <li><a href="#" onClick={props.handleNavbar}><span><FontAwesomeIcon icon={faToolbox} />&nbsp;</span>Services</a></li>
           <li><a href="#" onClick={props.handleNavbar}><span><FontAwesomeIcon icon={faBlog} />&nbsp;</span>Blog</a></li>
         </NavLinks>
@@ -61,6 +61,12 @@ const NavLinks = styled.ul`
 
     &:hover {
       color: #B421FC;
+    }
+  }
+
+  @media (max-width: 768px) {
+    & a {
+      font-size: 1.1rem;
     }
   }
 `;

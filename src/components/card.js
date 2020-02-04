@@ -10,7 +10,7 @@ function Card(props) {
                     <img class="card-image" src={img} alt={title}/>
                     <div class="card-texts main-flex-style">
                         <h4><b>{title}</b></h4>
-                        <p>{text}</p>
+                        <p class="post-card-p">{text}</p>
                     </div>
                 </div>
             </div>;

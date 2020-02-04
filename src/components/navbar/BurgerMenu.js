@@ -45,6 +45,18 @@ const Wrapper = styled.div`
     top: 11px;
   }
 
+  @media (max-width: 768px) {
+    & span {
+      background: #B421FC;
+      display: block;
+      position: relative;
+      width: 3rem;
+      height: .2rem;
+      margin-bottom: .7rem;
+      transition: all ease-in-out 0.2s;
+    }
+  }
+
 `;
 
 
