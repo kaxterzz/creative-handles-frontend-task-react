@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./navbar/Navbar";
+import Navbar from "./navbar/navBar";
 import SlideShow from "./slideshow";
 import Posts from "./posts";
 import Contact from "./contact";

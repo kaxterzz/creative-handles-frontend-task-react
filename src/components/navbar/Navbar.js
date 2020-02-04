@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useSpring, animated, config } from "react-spring";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faInfo, faToolbox, faBlog } from '@fortawesome/free-solid-svg-icons'
-import Brand from "./Brand";
-import BurgerMenu from "./BurgerMenu";
-import CollapseMenu from "./CollapseMenu";
+import Brand from "./brand";
+import BurgerMenu from "./burgerMenu";
+import CollapseMenu from "./collapseMenu";
 
 const Navbar = (props) => {
   const barAnimation = useSpring({
